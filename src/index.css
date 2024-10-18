@@ -1,0 +1,205 @@
+/* 
+line-height calculation
+1. 行送りのサイズ(px) / フォントサイズ(px) = 行送りの倍率
+  行送りのサイズが 30px、フォントサイズが 16px の場合、line-heightに設定すべき値は 1.875（＝30 ÷ 16) 
+  line-height: calc(30 / 16);
+2. calc() を使って、そのまま足し算する式を値として設定します。上の余白と下の余白を同じ長さにして、フォントサイズ + 余白の長さ × 2 
+  line-height: calc(4.5rem + 1.6rem * 2); 
+*/
+
+/*
+--- COLORS
+primary:
+text: 
+background: 
+bg-gray: 
+
+--- FONTS
+Noto Sans JP（Medium/Bold/Black）
+Noto Serif JP（Regular/Semibold/Bold/Black）
+Oleo Script（Regular）
+Poppins（Bold）
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@200..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oleo+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+
+/*******************************/
+/* Reset Style */
+/*******************************/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  line-height: 1.2;
+}
+
+body {
+  line-height: 1;
+
+  /* TODO: Update this style */
+  font-family: 'Noto Sans JP', 'Helvetica Neue', Arial, 'Hiragino Kaku Gothic ProN', 'Hiragino Sans',
+    Meiryo, sans-serif;
+  font-size: 1.6rem;
+
+  /* color: #454545; */
+  /* font-weight: 500; */
+  /* line-height: 2.3rem; */
+  /* TODO: Update this style */
+}
+
+li {
+  list-style: none;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+
+a {
+  text-decoration: none;
+  /* TODO: Update this style */
+  /* color: #454545; */
+}
+
+a:hover {
+  cursor: pointer;
+}
+
+img {
+  max-width: 100%;
+}
+
+/*******************************/
+/* Font size */
+/*******************************/
+html {
+  /* font-size:10px */
+  font-size: 62.5%;
+  overflow-x: hidden;
+}
+
+@media screen and (max-width: 1023px) and (min-width: 768px) {
+  html {
+    font-size: 1vw;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  html {
+    font-size: calc(10 / 375 * 100vw);
+  }
+}
+
+/*******************************/
+/* CSS Valuables */
+/*******************************/
+:root {
+  /*
+  --- COLORS
+  */
+  --primary: #1989ff;
+  --green: #bdfa3e;
+  --text: #454545;
+  --bg-blue: #d0e7ff;
+  --bg-gray: #f2f2f2;
+
+  /* 
+  --- Fonts
+  */
+  --sans: 'Noto Sans JP', sans-serif;
+  --sanserif: 'Noto Serif JP', sans-serif;
+  --font-os: 'Oleo Script', cursive;
+  --font-p: 'Poppins', sans-serif;
+}
+
+/*******************************/
+/* Common Style */
+/*******************************/
+.br-sp {
+  display: none;
+}
+
+.br-pc {
+  display: block;
+}
+
+@media screen and (max-width: 767px) {
+  .br-sp {
+    display: block;
+  }
+
+  .br-pc {
+    display: none;
+  }
+}
+
+.font-regular {
+  font-weight: 400;
+}
+
+.font-medium {
+  font-weight: 500;
+}
+
+.font-semibold {
+  font-weight: 600;
+}
+
+.font-bold {
+  font-weight: 700;
+}
+
+.font-black {
+  font-weight: 900;
+}
+
+.font-uppercase {
+  text-transform: uppercase;
+}
+
+.container {
+  padding: 0 1.6rem;
+  overflow: hidden;
+}
+
+@media screen and (max-width: 767px) {
+  .container {
+    padding: 0 0.3rem;
+  }
+}
+
+/* Add this style to contents <div> */
+.contents_width {
+  width: 100%;
+  max-width: 116rem;
+  margin: 0 auto;
+}
+
+/*******************************/
+/* Font Style */
+/*******************************/
+.serif {
+  font-family: 'Noto Serif JP', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* font oleo */
+.oleo-script {
+  font-family: 'Oleo Script', cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* font poppins */
+.poppins-bold {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}

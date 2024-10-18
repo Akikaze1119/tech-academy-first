@@ -1,0 +1,12 @@
+.custom-icon {
+  color: blue;
+  font-size: 32px;
+}
+
+/* sp */
+@media screen and (max-width: 767px) {
+}
+
+/* pc */
+@media screen and (min-width: 768px) {
+}
