@@ -1,6 +1,6 @@
 export default function Interest() {
   return (
-    <section className='bg_stripe interest container '>
+    <section className='bg-stripe interest container '>
       <div className='contents_width font-black'>
         <div className='interest-text'>
           <h2>ホワイトニングには興味あるけど…</h2>
