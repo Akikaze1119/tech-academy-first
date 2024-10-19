@@ -11,7 +11,15 @@
 }
 
 /*******************************/
-/* Common Style */
+/* General */
+/*******************************/
+.bg_stripe {
+  background: repeating-linear-gradient(45deg, #fff, #fff 0.5rem, #f5f5f5 0, #f5f5f5 1rem);
+  z-index: -10;
+}
+
+/*******************************/
+/* Header */
 /*******************************/
 header .contents_width {
   max-width: 60rem;
@@ -34,7 +42,7 @@ header .contents_width {
   margin: 8.4rem 0 8.8rem;
 }
 
-.header-text-container p {
+.appeal-text p {
   display: inline-block;
   font-size: 1.9rem;
   line-height: calc(30 / 19);
@@ -42,19 +50,19 @@ header .contents_width {
   padding-right: 0.3rem;
 }
 
-.header-text-container img {
-  width: 22rem;
-  margin: 3.7rem 0.8rem 3.5rem auto;
-  padding-right: 0.3rem;
-}
-
-.header-text-container p::after {
+.appeal-text p::after {
   content: '';
   display: block;
   width: 100%;
   height: 1rem;
   background-color: #f940bc;
   margin: -1.2rem -0.3rem 0.1rem 0.1rem;
+}
+
+.header-text-container img {
+  width: 22rem;
+  margin: 3.7rem 0.8rem 3.5rem auto;
+  padding-right: 0.3rem;
 }
 
 /*******************************/
@@ -86,4 +94,66 @@ header .contents_width {
   border-radius: 2.4rem;
   margin-top: 1.2rem;
   box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.16);
+}
+
+/*******************************/
+/* Interest */
+/*******************************/
+.interest {
+  position: relative;
+}
+
+.interest::after {
+  content: url('./assets/thinking_w.png');
+  display: inline-block;
+  width: 19.2rem;
+  height: 16.5rem;
+  position: absolute;
+  top: -1.5rem;
+  right: -1.2rem;
+  z-index: -1;
+}
+
+.interest .contents_width {
+  padding: 6.3rem 0 4.8rem;
+}
+
+.interest h2 {
+  font-size: 1.4rem;
+  line-height: calc(16 / 14);
+  font-weight: 900;
+  padding-left: 4rem;
+}
+
+.interest ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 6.3rem;
+  padding: 0 4rem;
+  gap: 1.5rem;
+}
+
+.interest li {
+  font-size: 1.4rem;
+  line-height: 1;
+  background-color: #fff;
+  border-radius: 2.4rem;
+  border: solid 0.2rem #707070;
+  padding: 1.5rem 0.5rem 1.5rem 1rem;
+  width: 100%;
+  text-align: center;
+}
+
+.interest .appeal-text {
+  text-align: center;
+}
+
+.interest .appeal-text p {
+  font-size: 1.5rem;
+  line-height: calc(30 / 15);
+  letter-spacing: calc((-30 / 1000) * 1.5rem);
+  margin-top: 3.7rem;
+  margin-left: 0.1rem;
 }

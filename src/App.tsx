@@ -1,11 +1,15 @@
 import Header from './containers/Header';
 import Contact from './containers/Contact';
+import Interest from './containers/interest';
 
 function App() {
   return (
     <>
       <Header />
-      <main>{<Contact />}</main>
+      <main>
+        <Contact />
+        <Interest />
+      </main>
     </>
   );
 }

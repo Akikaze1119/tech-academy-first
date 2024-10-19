@@ -4,7 +4,7 @@ export default function Header() {
   return (
     <header className='header container'>
       <div className='contents_width'>
-        <div className='header-text-container font-black'>
+        <div className='header-text-container font-bold appeal-text'>
           <div>
             <p>年間15万人以上の来院実績</p>
             <br />
