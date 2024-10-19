@@ -43,7 +43,7 @@ header .contents_width {
 }
 
 .header-text-container img {
-  width: 21.8rem;
+  width: 22rem;
   margin: 3.7rem 0.8rem 3.5rem auto;
   padding-right: 0.3rem;
 }
@@ -55,4 +55,35 @@ header .contents_width {
   height: 1rem;
   background-color: #f940bc;
   margin: -1.2rem -0.3rem 0.1rem 0.1rem;
+}
+
+/*******************************/
+/* Contact */
+/*******************************/
+.contact {
+  background-color: #3fbcfa;
+}
+
+.contact .contents_width {
+  padding: 1.8rem 0 2rem;
+}
+
+.contact p {
+  font-size: 1.6rem;
+  line-height: calc(30 / 16);
+  color: #fff;
+  text-align: center;
+  text-shadow: 10px 0px 10px rgba(0, 0, 0, 0.16);
+}
+
+.contact button {
+  display: block;
+  width: 13.4rem;
+  margin: 0 auto;
+  padding: 1.3rem 0;
+  font-size: 1.5rem;
+  background-color: #bdfa3e;
+  border-radius: 2.4rem;
+  margin-top: 1.2rem;
+  box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.16);
 }
