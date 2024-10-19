@@ -38,7 +38,7 @@ export default function QA() {
         <div className='qa-container'>
           {contents.map((content) => (
             <div key={content.id} className='qa-box'>
-              <img src={content.img} alt={content.question} />
+              <img src={content.img} alt={'question image'} />
               <h3 className='question'>
                 <span>Q</span>
                 {content.question}
