@@ -1,6 +1,7 @@
 import Header from './containers/Header';
 import Contact from './containers/Contact';
-import Interest from './containers/interest';
+import Interest from './containers/Interest';
+import Point from './containers/Point';
 
 function App() {
   return (
@@ -9,6 +10,7 @@ function App() {
       <main>
         <Contact />
         <Interest />
+        <Point />
       </main>
     </>
   );
