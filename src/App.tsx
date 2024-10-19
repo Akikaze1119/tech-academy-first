@@ -1,13 +1,11 @@
 import Header from './containers/Header';
-import Template from './containers/Template';
+import Contact from './containers/Contact';
 
 function App() {
   return (
     <>
       <Header />
-      <main>
-        <Template />
-      </main>
+      <main>{<Contact />}</main>
     </>
   );
 }
