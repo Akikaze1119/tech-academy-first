@@ -114,7 +114,7 @@ header .contents_width {
   text-shadow: 10px 0px 10px rgba(0, 0, 0, 0.16);
 }
 
-.contact button {
+.hoverflash {
   display: block;
   width: 13.4rem;
   margin: 0 auto;
@@ -124,8 +124,25 @@ header .contents_width {
   border-radius: 2.4rem;
   margin-top: 1.2rem;
   box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.16);
+  position: relative;
+  overflow: hidden;
 }
 
+.contact .hoverflash::before {
+  content: '';
+  display: block;
+  width: 5rem;
+  height: 300%;
+  top: 50%;
+  position: absolute;
+  background-color: #fff;
+  transform: translate(-500%, -50%) rotate(-45deg);
+  transition: transform 0.5s ease;
+}
+
+.contact .hoverflash:hover::before {
+  transform: translate(500%, -50%) rotate(-45deg);
+}
 /*******************************/
 /* Interest */
 /*******************************/
@@ -396,6 +413,10 @@ header .contents_width {
   display: inline;
 }
 
+.acc-header:hover {
+  opacity: 0.5;
+}
+
 .accordion-symbol {
   position: absolute;
   top: 0;
@@ -415,4 +436,25 @@ header .contents_width {
 .acc-child::before {
   content: 'A：';
   display: inline;
+}
+
+/*******************************/
+/* Footer */
+/*******************************/
+.footer {
+  padding: 5.1rem 0;
+}
+
+footer img {
+  width: 18.8rem;
+  margin: 0 auto;
+  display: block;
+}
+
+.footer-text {
+  text-align: center;
+  margin-top: 0.9rem;
+  font-size: 1.2rem;
+  line-height: calc(18 / 12);
+  color: #777777;
 }

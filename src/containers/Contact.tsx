@@ -10,7 +10,7 @@ export default function Contact({ text }: Props) {
       <div className='contents_width'>
         {text}
         <a href='#'>
-          <button>ご予約</button>
+          <button className='hoverflash'>ご予約</button>
         </a>
       </div>
     </section>

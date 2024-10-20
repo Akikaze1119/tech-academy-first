@@ -5,6 +5,7 @@ import Point from './containers/Point';
 import QA from './containers/QA';
 import Reason from './containers/Reason';
 import FAQ from './containers/FAQ';
+import Footer from './containers/Footer';
 
 function App() {
   return (
@@ -45,6 +46,7 @@ function App() {
           }
         />
       </main>
+      <Footer />
     </>
   );
 }
