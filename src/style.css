@@ -1,14 +1,10 @@
-.custom-icon {
-  color: blue;
-  font-size: 32px;
-}
 /* sp */
-@media screen and (max-width: 767px) {
-}
+/* @media screen and (max-width: 767px) {
+} */
 
 /* pc */
-@media screen and (min-width: 768px) {
-}
+/* @media screen and (min-width: 768px) {
+} */
 
 /*******************************/
 /* General */
@@ -58,9 +54,9 @@
 /*******************************/
 /* Header */
 /*******************************/
-header .contents_width {
+/* header .contents_width {
   max-width: 60rem;
-}
+} */
 
 .header {
   background-image: url('./assets/main_sp.jpg');
@@ -71,12 +67,26 @@ header .contents_width {
   padding-right: 0.3rem;
 }
 
+@media screen and (min-width: 768px) {
+  .header {
+    background-image: url('./assets/main_pc.jpg');
+    height: 68.4rem;
+    background-position: center top;
+    padding-right: 2rem;
+  }
+}
+
 .header-text-container {
   display: flex;
   flex-direction: column;
-  align-items: end;
-  justify-content: center;
+  align-items: flex-end;
   margin: 8.4rem 0 8.8rem;
+}
+
+@media screen and (min-width: 768px) {
+  .header-text-container {
+    width: 100%;
+  }
 }
 
 .appeal-text p {
@@ -89,10 +99,29 @@ header .contents_width {
   font-weight: 900;
 }
 
+@media screen and (min-width: 768px) {
+  .appeal-text p {
+    font-size: 4.5rem;
+    line-height: calc(4.5rem + 1.6rem * 2);
+    background: linear-gradient(transparent calc(100% - 2rem), #f940bc calc(100% - 2rem));
+  }
+
+  .appeal-text br + p {
+    margin-top: 0.9rem;
+  }
+}
+
 .header-text-container img {
   width: 22rem;
   margin: 3.7rem 0.8rem 3.4rem auto;
   padding-right: 0.3rem;
+}
+
+@media screen and (min-width: 768px) {
+  .header-text-container img {
+    width: 45rem;
+    margin: 4.8rem 5rem 2.6rem auto;
+  }
 }
 
 /*******************************/
@@ -106,12 +135,29 @@ header .contents_width {
   padding: 1.8rem 0 2rem;
 }
 
+@media screen and (min-width: 768px) {
+  .contact .contents_width {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5.8rem;
+    padding: 4.4rem 0 4.5rem;
+  }
+}
+
 .contact p {
   font-size: 1.6rem;
   line-height: calc(30 / 16);
   color: #fff;
   text-align: center;
   text-shadow: 10px 0px 10px rgba(0, 0, 0, 0.16);
+}
+
+@media screen and (min-width: 768px) {
+  .contact p {
+    font-size: 3.8rem;
+    line-height: calc(59 / 38);
+  }
 }
 
 .hoverflash {
@@ -121,11 +167,23 @@ header .contents_width {
   padding: 1.3rem 0;
   font-size: 1.5rem;
   background-color: #bdfa3e;
+  color: #454545;
   border-radius: 2.4rem;
   margin-top: 1.2rem;
   box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.16);
   position: relative;
   overflow: hidden;
+}
+
+@media screen and (min-width: 768px) {
+  .hoverflash {
+    width: 28.4rem;
+    padding: 2.5rem 0;
+    border-radius: 5.5rem;
+    margin: 0;
+    font-size: 3.8rem;
+    line-height: calc(59 / 38);
+  }
 }
 
 .contact .hoverflash::before {
