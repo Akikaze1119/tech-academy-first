@@ -45,6 +45,19 @@
   margin: 0 1rem;
 }
 
+@media screen and (min-width: 768px) {
+  .point h2,
+  .qa h2,
+  .reason h2,
+  .faq h2 {
+    font-size: 4rem;
+    line-height: 4rem;
+    border-radius: 2rem;
+    width: 94.8rem;
+    margin: 0 auto;
+  }
+}
+
 .qa h2,
 .reason h2 {
   background-color: #f940bc;
@@ -54,10 +67,6 @@
 /*******************************/
 /* Header */
 /*******************************/
-/* header .contents_width {
-  max-width: 60rem;
-} */
-
 .header {
   background-image: url('./assets/main_sp.jpg');
   background-position: center top;
@@ -206,6 +215,7 @@
 /*******************************/
 .interest {
   position: relative;
+  width: 100%;
 }
 
 .interest::after {
@@ -219,8 +229,28 @@
   z-index: -1;
 }
 
+@media screen and (min-width: 768px) {
+  .interest::after {
+    content: url('./assets/thinking_w-pc.png');
+    position: absolute;
+    width: 63rem;
+    height: auto;
+    top: auto;
+    right: auto;
+    bottom: -0.1rem;
+    right: -4rem;
+    z-index: -1;
+  }
+}
+
 .interest .contents_width {
   padding: 6.3rem 0 4.6rem;
+}
+
+@media screen and (min-width: 768px) {
+  .interest .contents_width {
+    padding: 7rem 0 6rem;
+  }
 }
 
 .interest h2 {
@@ -228,6 +258,14 @@
   line-height: calc(16 / 14);
   font-weight: 900;
   padding-left: 4rem;
+}
+
+@media screen and (min-width: 768px) {
+  .interest h2 {
+    font-size: 3.1rem;
+    line-height: 1;
+    padding-left: 0;
+  }
 }
 
 .interest ul {
@@ -240,6 +278,15 @@
   gap: 1.5rem;
 }
 
+@media screen and (min-width: 768px) {
+  .interest ul {
+    padding: 0;
+    margin-top: 5.4rem;
+    max-width: 76.9rem;
+    gap: 2.9rem;
+  }
+}
+
 .interest li {
   font-size: 1.4rem;
   line-height: 1;
@@ -249,6 +296,16 @@
   padding: 1.5rem 0.5rem 1.5rem 1rem;
   width: 100%;
   text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+  .interest li {
+    font-size: 3rem;
+    line-height: calc(40 / 30);
+    border-radius: 5rem;
+    border: solid 0.7rem #707070;
+    padding: 2.5rem 0.5rem 2.5rem 1rem;
+  }
 }
 
 .interest .appeal-text {
@@ -263,6 +320,18 @@
   margin-left: 0.1rem;
 }
 
+@media screen and (min-width: 768px) {
+  .interest .appeal-text {
+    text-align: left;
+  }
+  .interest .appeal-text p {
+    font-size: 3.7rem;
+    line-height: calc(60 / 37);
+    letter-spacing: normal;
+    margin-top: 3.6rem;
+  }
+}
+
 /*******************************/
 /* Point */
 /*******************************/
@@ -273,6 +342,11 @@
 
 .point .contents_width {
   padding: 2.4rem 0 4.8rem;
+}
+@media screen and (min-width: 768px) {
+  .point .contents_width {
+    padding: 4.4rem 0 4.5rem;
+  }
 }
 
 .point h2 {
