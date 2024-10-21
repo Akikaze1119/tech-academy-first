@@ -55,6 +55,9 @@
     border-radius: 2rem;
     width: 94.8rem;
     margin: 0 auto;
+    padding: 4rem 0 3.6rem;
+    /* for point heading line */
+    letter-spacing: 0.2rem;
   }
 }
 
@@ -343,9 +346,10 @@
 .point .contents_width {
   padding: 2.4rem 0 4.8rem;
 }
+
 @media screen and (min-width: 768px) {
   .point .contents_width {
-    padding: 4.4rem 0 4.5rem;
+    padding: 6rem 0 9rem;
   }
 }
 
@@ -362,12 +366,38 @@
   margin-top: 3.2rem;
 }
 
+@media screen and (min-width: 768px) {
+  .points-container {
+    margin-top: 6rem;
+  }
+
+  .point-box {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    width: 85.8rem;
+    margin: 0 auto;
+  }
+
+  .point-box + .point-box {
+    margin-top: 6rem;
+  }
+}
+
 .point-2 {
   margin-top: 3.5rem;
 }
 
 .point-3 {
   margin-top: 3.6rem;
+}
+
+@media screen and (min-width: 768px) {
+  .point-2,
+  .point-3 {
+    margin-top: 0;
+  }
 }
 
 .point-num {
@@ -378,10 +408,38 @@
   text-align: center;
 }
 
+@media screen and (min-width: 768px) {
+  .point-num {
+    font-size: 7rem;
+    line-height: 7rem;
+    width: 14rem;
+    border-bottom: none;
+    text-align: left;
+    height: 100%;
+    padding-right: 3rem;
+    flex-basis: content;
+    letter-spacing: calc((100 / 1000) * 7rem);
+  }
+}
+
 .point-title {
   font-size: 1.5rem;
   line-height: calc(21 / 15);
   margin-top: 2.3rem;
+  text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+  .point-text-box {
+    border-left: solid 0.7rem #fff;
+    padding: 2rem 0 1rem 2.6rem;
+  }
+  .point-title {
+    font-size: 3rem;
+    line-height: calc(36 / 30);
+    margin-top: 0;
+    text-align: left;
+  }
 }
 
 .point-text p {
@@ -391,6 +449,16 @@
   margin-top: 1.3rem;
   padding: 0 2.3rem 0 1.8rem;
   font-weight: 400;
+}
+
+@media screen and (min-width: 768px) {
+  .point-text p {
+    width: 69rem;
+    font-size: 1.8rem;
+    line-height: calc(27 / 18);
+    margin-top: 2rem;
+    padding: 0;
+  }
 }
 
 /*******************************/

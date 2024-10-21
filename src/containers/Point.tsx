@@ -32,24 +32,30 @@ export default function Point() {
       <div className='contents_width'>
         <h2>
           キラメキホワイトニング
-          <br />
+          <br className='br-sp' />
           3つのポイント
         </h2>
         <div className='points-container'>
           <div className='point-box'>
             <p className='point-num poppins-bold'>01</p>
-            <h3 className='point-title'>{contents[0].title}</h3>
-            <div className='point-text'>{contents[0].description}</div>
+            <div className='point-text-box'>
+              <h3 className='point-title'>{contents[0].title}</h3>
+              <div className='point-text'>{contents[0].description}</div>
+            </div>
           </div>
           <div className='point-box point-2'>
             <p className='point-num poppins-bold'>02</p>
-            <h3 className='point-title'>{contents[1].title}</h3>
-            <div className='point-text'>{contents[1].description}</div>
+            <div className='point-text-box'>
+              <h3 className='point-title'>{contents[1].title}</h3>
+              <div className='point-text'>{contents[1].description}</div>
+            </div>
           </div>
           <div className='point-box point-3'>
             <p className='point-num poppins-bold'>03</p>
-            <h3 className='point-title'>{contents[2].title}</h3>
-            <div className='point-text'>{contents[2].description}</div>
+            <div className='point-text-box'>
+              <h3 className='point-title'>{contents[2].title}</h3>
+              <div className='point-text'>{contents[2].description}</div>
+            </div>
           </div>
         </div>
       </div>
